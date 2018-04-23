@@ -14,6 +14,8 @@
 		D8006C7A208E9967002C34D1 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8006C79208E9967002C34D1 /* StartViewController.swift */; };
 		D8006C7C208E99CE002C34D1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8006C7B208E99CE002C34D1 /* SecondViewController.swift */; };
 		D8006C7E208E99F6002C34D1 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8006C7D208E99F6002C34D1 /* EndViewController.swift */; };
+		D8006C81208E9BAC002C34D1 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8006C80208E9BAC002C34D1 /* AnimationManager.swift */; };
+		D8006C83208EA030002C34D1 /* SegueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8006C82208EA030002C34D1 /* SegueManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D8006C79208E9967002C34D1 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		D8006C7B208E99CE002C34D1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D8006C7D208E99F6002C34D1 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		D8006C80208E9BAC002C34D1 /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		D8006C82208EA030002C34D1 /* SegueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				D8006C78208E9906002C34D1 /* View Controllers */,
+				D8006C7F208E9B67002C34D1 /* Managers */,
 				D8006C65208E97DF002C34D1 /* AppDelegate.swift */,
 				D8006C69208E97DF002C34D1 /* Main.storyboard */,
 				D8006C6C208E97E0002C34D1 /* Assets.xcassets */,
@@ -76,6 +81,15 @@
 				D8006C7D208E99F6002C34D1 /* EndViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D8006C7F208E9B67002C34D1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D8006C80208E9BAC002C34D1 /* AnimationManager.swift */,
+				D8006C82208EA030002C34D1 /* SegueManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +167,8 @@
 				D8006C7C208E99CE002C34D1 /* SecondViewController.swift in Sources */,
 				D8006C66208E97DF002C34D1 /* AppDelegate.swift in Sources */,
 				D8006C7A208E9967002C34D1 /* StartViewController.swift in Sources */,
+				D8006C81208E9BAC002C34D1 /* AnimationManager.swift in Sources */,
+				D8006C83208EA030002C34D1 /* SegueManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

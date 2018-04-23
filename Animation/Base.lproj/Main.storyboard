@@ -17,15 +17,35 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlK-gv-Z8s">
+                                <rect key="frame" x="110" y="607" width="155" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Next Button"/>
+                                <connections>
+                                    <action selector="NextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z0r-KB-neY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGG-2j-Yva">
+                                <rect key="frame" x="68" y="309" width="238" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.96089573374823611" green="0.94558188990031522" blue="0.96987646818161011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="9Re-Or-UY6" kind="presentation" identifier="Secondview" id="ycu-br-1RQ"/>
+                        <outlet property="NextButton" destination="DlK-gv-Z8s" id="Aab-cc-0Fg"/>
+                        <outlet property="StartLabel" destination="mGG-2j-Yva" id="4Gl-vk-bUu"/>
+                        <segue destination="9Re-Or-UY6" kind="presentation" identifier="SecondView" id="ycu-br-1RQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33" y="34"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wog-r5-SGf">
@@ -34,17 +54,43 @@
                     <view key="view" contentMode="scaleToFill" id="zWF-cd-HWM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvh-oz-loU">
+                                <rect key="frame" x="16" y="607" width="155" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Next Button"/>
+                                <connections>
+                                    <action selector="NextButton:" destination="9Re-Or-UY6" eventType="touchUpInside" id="Ssr-MY-BYq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gU-nz-AOa">
+                                <rect key="frame" x="204" y="607" width="155" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Previous Button"/>
+                                <connections>
+                                    <action selector="PreviousButton:" destination="9Re-Or-UY6" eventType="touchUpInside" id="7vf-14-58A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlp-MV-1S7">
+                                <rect key="frame" x="43" y="309" width="289" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.96089573370000003" green="0.94558188990000003" blue="0.96987646819999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bF2-lg-pGI"/>
                     </view>
                     <connections>
+                        <outlet property="secondLabel" destination="qlp-MV-1S7" id="qIZ-ko-wMh"/>
                         <segue destination="N0y-pa-7BB" kind="presentation" identifier="EndView" id="IYK-0K-ZuA"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="Start" id="1rh-WB-Ogd"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="StartView" id="1rh-WB-Ogd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ens-P7-5jL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031" y="34"/>
+            <point key="canvasLocation" x="1029.5999999999999" y="33.733133433283363"/>
         </scene>
         <!--End View Controller-->
         <scene sceneID="ahf-X3-FmI">
@@ -53,11 +99,29 @@
                     <view key="view" contentMode="scaleToFill" id="yYZ-ZQ-e79">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3g-6q-oBm">
+                                <rect key="frame" x="110" y="607" width="155" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Previous Button"/>
+                                <connections>
+                                    <action selector="PreviousButton:" destination="N0y-pa-7BB" eventType="touchUpInside" id="7ru-Ba-xzq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="End Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlD-1r-ctp">
+                                <rect key="frame" x="78" y="309" width="219" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.96089573370000003" green="0.94558188990000003" blue="0.96987646819999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="avt-G8-Zus"/>
                     </view>
                     <connections>
-                        <segue destination="9Re-Or-UY6" kind="presentation" identifier="Secondview" id="JOV-8J-Zxm"/>
+                        <outlet property="EndLabel" destination="TlD-1r-ctp" id="9w5-tZ-UVN"/>
+                        <segue destination="9Re-Or-UY6" kind="presentation" identifier="SecondView" id="JOV-8J-Zxm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEh-Ry-Mvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -65,6 +129,10 @@
             <point key="canvasLocation" x="2004" y="34"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Next Button" width="251" height="66"/>
+        <image name="Previous Button" width="251" height="66"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JOV-8J-Zxm"/>
     </inferredMetricsTieBreakers>

@@ -3,6 +3,7 @@ import UIKit
 
 class EndViewController: UIViewController {
     
+    @IBOutlet var EndLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -16,4 +17,8 @@ class EndViewController: UIViewController {
         
     }
     
+    @IBAction func PreviousButton(_ sender: Any) {
+        
+        performSegue(withIdentifier: SegueManager.SecondView, sender: sender)
+    }
 }
