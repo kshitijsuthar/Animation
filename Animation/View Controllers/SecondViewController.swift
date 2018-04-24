@@ -1,4 +1,12 @@
 
+
+//Project by:
+//
+//      Kshitij Suthar - 300971838
+//      Yash Sompura - 300967186
+//      Shivam Shah - 300877523
+//
+
 import UIKit
 
 class SecondViewController: UIViewController {
@@ -24,6 +32,7 @@ class SecondViewController: UIViewController {
         AnimatePreviousButtonIn()
         MoveNextButtonOver()
         MovePreviousButtonOver()
+        pulseLabel()
     }
     
     @IBAction func PreviousButton(_ sender: Any) {
@@ -38,9 +47,13 @@ class SecondViewController: UIViewController {
         UIView.animate(withDuration: 1, delay: 0.25, options: [.curveEaseInOut], animations: {
             self.secondLabel.alpha = 1
             self.secondLabel.center.y -= 280
-            if self.secondLabel.center.y == 280 {
-                
-            }
+
+        }, completion: nil)
+    }
+    
+    func pulseLabel() {
+        UIView.animate(withDuration: 1, delay: 0.75, options: [.curveEaseInOut, .repeat, .autoreverse], animations: {
+            self.secondLabel.alpha = 0
         }, completion: nil)
     }
     
