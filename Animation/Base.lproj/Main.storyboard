@@ -83,6 +83,8 @@
                         <viewLayoutGuide key="safeArea" id="bF2-lg-pGI"/>
                     </view>
                     <connections>
+                        <outlet property="NextButton" destination="uvh-oz-loU" id="G7y-IW-imK"/>
+                        <outlet property="PreviousButton" destination="1gU-nz-AOa" id="iKC-9G-Foo"/>
                         <outlet property="secondLabel" destination="qlp-MV-1S7" id="qIZ-ko-wMh"/>
                         <segue destination="N0y-pa-7BB" kind="presentation" identifier="EndView" id="IYK-0K-ZuA"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="StartView" id="1rh-WB-Ogd"/>
@@ -121,6 +123,7 @@
                     </view>
                     <connections>
                         <outlet property="EndLabel" destination="TlD-1r-ctp" id="9w5-tZ-UVN"/>
+                        <outlet property="PreviousButton" destination="n3g-6q-oBm" id="5bu-uj-iHq"/>
                         <segue destination="9Re-Or-UY6" kind="presentation" identifier="SecondView" id="JOV-8J-Zxm"/>
                     </connections>
                 </viewController>

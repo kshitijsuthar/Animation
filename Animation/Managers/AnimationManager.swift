@@ -6,11 +6,16 @@
 //  Copyright © 2018 Kshitij Suthar. All rights reserved.
 //
 import CoreGraphics
+import UIKit
 
 class AnimationManager {
     
+    class var ScreenBounds: CGRect {
+        return UIScreen.main.bounds
+    }
+    
     class var Top:CGPoint {
-        return CGPoint(x: 10.0, y: 10.0)
+        return CGPoint(x: ScreenBounds.midX, y: ScreenBounds.minY)
     }
     
     class var Right:CGPoint {
